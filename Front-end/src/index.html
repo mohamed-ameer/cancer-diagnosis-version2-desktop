@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/all.min.css" />
+		<link rel="stylesheet" href="css/materialize.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>cancer diagnosis system</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="nav">
+				<div class="logo">
+					<img src='./assets/images/logo.svg' alt="" />
+					<div>
+						<h1>cancer diagnosis system</h1>
+					</div>
+				</div>
+				<!-- <div className="about">
+					<span></span>
+				</div> -->
+			</div>
+		</header>
+		<section>
+			<div class="land">
+				<div class="btn__cancer">
+					<button class="cancer__type blood__btn" data-cancer__type="blood"><img src='./assets/images/blood.svg' alt="" />Blood</button>
+                    <button class="cancer__type lung__btn" data-cancer__type="lung"><img src='./assets/images/lung.svg' alt="" />Lung</button>
+                    <button class="cancer__type colon__btn" data-cancer__type="colon" ><img src='./assets/images/colon.svg' alt="" />Colon</button>
+                    <button class="cancer__type brain__btn" data-cancer__type="brain"><img src='./assets/images/brain.svg' alt="" />Brain</button>
+                    <button class="cancer__type breast__btn" data-cancer__type="breast"><img src='./assets/images/breast.svg' alt="" />Breast</button>
+                    <button class="cancer__type skin__btn" data-cancer__type="skin"><img src='./assets/images/skin.svg' alt="" />Skin</button>
+				</div>
+				<div class='land__info'>
+					<div class="diagnosis">
+						<p>Diagnosis:&nbsp;</p>
+                        <p class="name__diagnosis" id="cancer_type"> </p>
+                    </div>
+                    <div class="diagnosis__img">
+						<div class="img" onclick='document.getElementById("inputTag").click()' >
+                            <img class="imgUpload" src='./assets/images/upload.svg' alt="" />
+                        </div>
+                        <div class="explain">
+							<div class="explan__text">
+								<p>Explanation</p>
+                                <p id="explanation"></p>
+                            </div>
+                            <div class="explan__text">
+								<p>Recommendation</p>
+                                <p id="recommendation"></p>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+			</div>
+			<div>
+				<div class="btn__detect__upload ">
+					
+					<button class="btn__upload"><label class="upload" for="inputTag">Upload<input onchange="previewFile()" id="inputTag" type="file" value="picture" name="picture"/></label></button>
+					<button id="dis" onclick="sendData()" >Detect</button>
+				</div>
+			</div>
+			<!-- <img class="wave_footer" src="../src/assets/images/wave.svg" alt=""> -->
+		</section>
+		
+		<!-- <footer class="footer">
+			<img src="../src/assets/images/wave.svg" alt="">
+		</footer> -->
+		<script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+		<script src="js/mero.js"></script>
+		<script src="js/materialize.min.js"></script>
+	</body>
+
+	<!-- /* animation background */ -->
+
+	<!-- <div class="background">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div> -->
+</html>
